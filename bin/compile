@@ -110,7 +110,8 @@ echo "-----> Building with Mix"
 unset GIT_DIR
 
 echo "-----> Bundling dependencies"
-ls -al
+echo "EXROOT is $EXROOT"
+find $EXROOT
 echo "Getting deps"
 mix deps.get 2>&1 | indent
 echo "compiling deps"
