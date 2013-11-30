@@ -120,5 +120,5 @@ mix deps.compile 2>&1 | indent
 echo "-----> Compiling app"
 mix compile 2>&1 | indent
 
-mkdir ${build}/.profile.d
-echo "cd /app/${APP_NAME}" > ${build}/.profile.d/path.sh
+#mkdir ${build}/.profile.d
+#echo "cd /app/${APP_NAME}" > ${build}/.profile.d/path.sh
