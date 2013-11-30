@@ -110,6 +110,8 @@ echo "-----> Building with Mix"
 unset GIT_DIR
 
 echo "-----> Bundling dependencies"
+ls -al
+rm -rf deps/*
 mix deps.get 2>&1 | indent
 
 echo "-----> Compiling app"
